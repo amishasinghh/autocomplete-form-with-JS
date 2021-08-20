@@ -10,3 +10,6 @@ function billingFunction(){
     document.getElementById('billingZip').value = '';
     }
 }
+
+
+

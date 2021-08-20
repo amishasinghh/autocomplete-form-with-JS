@@ -1,0 +1,68 @@
+<html>
+    <head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">    
+    </head>
+
+    <body>
+    <script src="autocomplete.js"></script>
+    <h1>You Are Just One Step Away From Confirming Your Order!</h1>
+	<p>Thank you for shopping with us. Please enter your Shipping and Billing details.</p>
+
+<form class="form-horizontal">
+		
+	<fieldset>
+			<legend>Shipping Information</legend>
+			
+			<div class="form-group">
+				<label class="col-sm-1 control-label" for ="shippingName">Name:</label>
+			    
+				<div class="col-sm-11">
+					<input type = "text" name = "shipName" id = "shippingName" required><br/>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label  class="col-sm-1 control-label" for = "shippingZip">Zip code:</label>
+				
+				<div class="col-sm-11">
+					<input type = "text" name = "shipZip" id = "shippingZip" pattern = "[0-9]{6}" required><br/>	
+				</div>
+			
+			</div>
+		</fieldset>
+
+		<input type="checkbox" id="same" name="same" onchange= "billingFunction()"/>
+		<label class="input-same" for = "same">Is Billing Information the Same?</label>
+				
+		<fieldset> 
+			<legend>Billing Information</legend>
+			
+			<div class="form-group">
+				<label class="col-sm-1 control-label" for ="billingName">Name:</label>
+				
+				<div class="col-sm-11">
+					<input type = "text" name = "billName" id = "billingName" required><br/>
+				</div>
+			</div>	
+		
+			<div class="form-group">
+				<label class="col-sm-1 control-label" for = "billingZip">Zip code:</label>
+
+				<div class="col-sm-11">
+					<input type = "text" name = "billZip" id = "billingZip" pattern = "[0-9]{6}" required><br/>
+				</div>
+			</div>
+
+		</fieldset>
+			
+			<div class="col-sm-offset-1">
+				<input class="btn btn-primary btn-default" type = "submit" value = "Verify"/>
+			</div>
+		</form>
+    </body>
+
+	<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>

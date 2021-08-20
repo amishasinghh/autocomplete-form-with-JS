@@ -1,9 +1,35 @@
+body{
+    margin: 2rem;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+p{
+    font-size: 2rem;
+}
+
+form{
+    margin-top: 4rem;
+    background-color: #89ceec29;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+fieldset{
+    margin-bottom: 2rem;
+}
 input{
     border:1px solid black;
 }
+
+.input-same{
+    margin-bottom: 1rem;
+}
+
 input:focus{
     background-color: #E6E6E6;
-}
-fieldset{
-    margin-bottom: 4%;
 }
